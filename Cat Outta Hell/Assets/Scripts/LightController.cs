@@ -26,15 +26,15 @@ namespace UnityEngine.Experimental.Rendering.Universal {
             }
             if (!monsterController.followingCat)
             {
-                if (lightCollider.radius >= 1.5f)
+                if (lightCollider.radius >= 4.2f)
                 {
                     demonLight.pointLightOuterRadius -= Time.deltaTime/3;
                     lightCollider.radius -= Time.deltaTime / 5;
                 }
                 else
                 {
-                    demonLight.pointLightOuterRadius = 3.2f;
-                    lightCollider.radius = 1.5f;
+                    demonLight.pointLightOuterRadius = 5f;
+                    lightCollider.radius = 4.2f;
                 }
             }
         }
